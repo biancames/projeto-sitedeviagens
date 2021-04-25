@@ -7,26 +7,27 @@
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+
 }
 
-ul {
-    list-style: none;
-    display: flex;
-}
-
-li {
-    margin: 0 15px;
-}
-
-nav {
+header nav {
     display: flex;
     color: white;
     justify-content: space-between;
     margin: auto 15px;
 }
 
-nav p{
+header nav p{
     font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 15px;
 }
 
 header {
@@ -43,6 +44,7 @@ header {
 
 .header-content h1 {
     margin-bottom: 10px;
+    font-size: 4rem;
 }
 
 button {
@@ -52,4 +54,40 @@ button {
     border: 0;
     background: #e77959;
     color: white;
+}
+
+/* Responsividade */
+
+@media (max-width: 767px) {
+    
+}
+
+@media (max-width: 480px) {
+    body{
+        height: calc(100vh - 55px);
+    }
+
+    header nav ul{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 0;
+
+        background: #1D61DD;
+        color: white;
+        font-weight: bold;
+        height: 55PX;
+        margin: 0;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header nav p {
+        width: 100%;
+        text-align: center;
+    }
+
 }
