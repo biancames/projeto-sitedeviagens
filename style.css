@@ -64,23 +64,26 @@ header nav ul li {
     padding: 15px;
 }
 
-.pacotes .pacotes-title{
+.pacotes .pacotes-title {
     width: 100%;
-    margin: auto;
+    margin: 25px 0;
     text-align: center;
-
 }
 
-.pacotes .pacotes-cards{
+.pacotes .pacotes-cards {
     display: flex;
+    max-width: 950px;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.pacotes .card{
+.pacotes .card {
     width: 250px;
     height: 350px;
     background: white;
     border-radius: 24px 0;
-    margin: 25px auto;
+    margin: 25px;
     position: relative;
 }
 
@@ -159,7 +162,7 @@ header nav ul li {
 
 @media (max-width: 480px) {
     body{
-        height: calc(100vh - 55px);
+        margin-bottom: 55px;
     }
 
     header nav ul{
@@ -168,6 +171,8 @@ header nav ul li {
         left: 0;
         width: 100%;
         padding: 0;
+
+        z-index: 99;
 
         background: #1D61DD;
         color: white;
