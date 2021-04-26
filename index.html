@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Site de Viagens</title>
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <!--<img src="" alt="logo site de viagens">-->
+        <p>Mesquita Viagens</p>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#pacotes">Pacotes</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div id="home" class="header-content">
+        <h1>Cinque Terre</h1>
+        <p>Conheça a beleza da costa italiana embarcando conosco!</p>
+        <button>Saiba mais</button>
+      </div>
+    </header>
+
+    <section id="pacotes" class="pacotes">
+      <h1 class="pacotes-title">Conheça nossos pacotes</h1>
+      <div class="pacotes-cards">
+        <div class="card">
+          <div class="card-tag card-tag-top">
+            <p>Promoção</p>
+          </div>
+          <div class="card-tag card-tag-bottom">
+            <p>R$ 1200,00</p>
+          </div>
+          <img
+            src="https://images.unsplash.com/photo-1542839764-7cbd13228589?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=375&q=80"
+            alt="Disney"
+            class="image-card"
+          />
+          <div class="card-content">
+            <h1>Pacote Disney 4 noites</h1>
+            <ul>
+              <li><i data-feather="coffee"></i> Café da manhã incluso</li>
+              <li><i data-feather="bookmark"></i> Ingressos inclusos</li>
+              <li><i data-feather="wifi"></i> Wifi Grátis</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-tag card-tag-bottom">
+            <p>R$ 2000,00</p>
+          </div>
+          <img src="assets/cardmiami.jpg" alt="Miami" class="image-card" />
+          <div class="card-content">
+            <h1>Pacote Miami 5 noites</h1>
+            <ul>
+              <li><i data-feather="coffee"></i> Café da manhã incluso</li>
+              <li><i data-feather="briefcase"></i> Pet-friendly</li>
+              <li><i data-feather="wifi"></i> Wifi Grátis</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-tag card-tag-top">
+            <p>Ultimos pacotes</p>
+          </div>
+          <div class="card-tag card-tag-bottom">
+            <p>R$ 899,00</p>
+          </div>
+          <img
+            src="https://images.unsplash.com/photo-1571456822459-c78741e9fc26?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=751&q=80"
+            alt="Gramado"
+            class="image-card"
+          />
+          <div class="card-content">
+            <h1>Pacote Gramado Casal</h1>
+            <ul>
+              <li><i data-feather="coffee"></i> Café da manhã incluso</li>
+              <li><i data-feather="briefcase"></i> Pet-friendly</li>
+              <li><i data-feather="wifi"></i> Wifi Grátis</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicos" class="servicos">
+      <h1 class="servicos-title">Serviços</h1>
+      <div class="servicos-cards">
+
+        <div class="card">
+          <i data-feather="map"></i>
+          <h3>Tour Guiados</h3>
+          <div class="card-content">
+            <p>
+              Os tours guiados são passeios realizados com um guia, que além de
+              dar informações sobre o local vai te conduzir aos melhores pontos
+              turísticos.
+            </p>
+          </div>
+          <button>Saiba mais</button>
+        </div>
+
+        <div class="card">
+          <i data-feather="navigation"></i>
+          <h3>Aluguel de veículos</h3>
+          <div class="card-content">
+            <p>
+              Se você prefere explorar seu destino por conta própria não se
+              preocupe, garantimos o aluguel de veículos para sua viagem.
+            </p>
+          </div>
+          <button>Saiba mais</button>
+        </div>
+
+        <div class="card">
+          <i data-feather="camera"></i>
+          <h3>Fotografia Profissional</h3>
+          <div class="card-content">
+            <p>
+              Conte com nossos fotógrafos para registrar os melhores momentos
+              das suas viagens.
+            </p>
+          </div>
+          <button>Saiba mais</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="contato">
+        <div class="contato-card">
+            <h1>Entre em contato</h1>
+            <ul>
+                <li><i data-feather="map"></i>Rua José Bonifácio, 100</li>
+                <li><i data-feather="phone"></i>(55) 9999-9999</li>
+                <li><i data-feather="mail"></i>contato@mesquitaviagens.com</li>
+
+            </ul>
+
+        </div>
+    
+        <div id="map"></div>
+    </section>
+    <script>
+      feather.replace();
+
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+
+      function initMap() {
+        // The location of Uluru
+        const uluru = { lat: -25.344, lng: 131.036 };
+        // The map, centered at Uluru
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 4,
+          center: uluru,
+        });
+        // The marker, positioned at Uluru
+        const marker = new google.maps.Marker({
+          position: uluru,
+          map: map,
+        });
+      }
+    </script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?callback=initMap&libraries=&v=weekly"
+        async
+  ></script>
+    
+  </body>
+</html>
