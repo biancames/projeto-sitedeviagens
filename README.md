@@ -12,3 +12,12 @@ O que foi possível aprender nesse projeto:
    - Na seção de contato do site foi utilizado um mapa para mostrar o endereço, abordando a integração com o google maps e sua documentação.
  - Media queries
    - Foi abordada também a criação da responsividade do site para smartphones, tablets e desktop.
+
+##Imagens
+
+- Mobile
+![mobile](https://github.com/biancames/projeto-sitedeviagens/blob/master/assets/gifmobile2.gif?raw=true)
+
+- Desktop
+![desktop](https://github.com/biancames/projeto-sitedeviagens/blob/master/assets/gifdesktop.gif?raw=true)
+
