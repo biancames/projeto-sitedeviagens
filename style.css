@@ -153,6 +153,61 @@ header nav ul li {
     padding: 5px 10px;
 }
 
+.servicos {
+    padding: 15px;
+}
+
+.servicos .card{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.servicos .card svg {
+    width: 60px;
+    height: 60px;
+    margin: 50px;
+    transition: all 1s;
+}
+
+.servicos .card svg:hover {
+    stroke: #1D61DD;
+    transform: scale(1.1);
+}
+
+
+.servicos .card h3{
+    font-weight: bold;
+}
+.servicos .card .card-content {
+    height: 150px;
+}
+
+.servicos .card p {
+    color: gray;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.servicos .servicos-title {
+    text-align: center;
+    margin: 35px 0;
+}
+
+.servicos .servicos-cards {
+    margin-top: 25px;
+    display: flex;
+    max-width: 950px;
+    justify-content: center;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.servicos button{
+    background: #1D61DD;
+}
 
 /* Responsividade */
 
