@@ -20,7 +20,7 @@ O que foi possível aprender nesse projeto:
 ![mobile](https://github.com/biancames/projeto-sitedeviagens/blob/master/assets/gifmobile.gif?raw=true)
 
 - Desktop
-- 
-![desktop](https://github.com/biancames/projeto-sitedeviagens/blob/master/assets/gifdesktop.gif?raw=true)
+
+![desktop](https://github.com/biancames/projeto-sitedeviagens/blob/b58fe8aeeaf21420f685b4baecce4d164b9f1894/assets/gifdesktop.gif)
 
 
